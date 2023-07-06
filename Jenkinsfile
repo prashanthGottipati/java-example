@@ -1,5 +1,8 @@
 pipeline{
-	agent { label 'slave-2'}
+	agent {label 'tomcatSlave'}
+	parameters {
+ 		 string defaultValue: 'example', name: 'test'
+	}
 	stages{
         stage('Build stage') {
             steps {
