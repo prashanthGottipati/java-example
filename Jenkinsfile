@@ -5,6 +5,7 @@ pipeline{
             steps {
                 echo 'This is a build stage'
 				sh 'sleep 5'
+		    		echo 'testing......'
 			}
 		}
         stage('Push stage') {
