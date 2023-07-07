@@ -15,6 +15,7 @@ pipeline{
             steps {
                 echo 'This is push stage'
                 sh 'sleep 5'
+		echo 'Checking Webhook trigger ***********'
 			}
 		}
         stage('Deploy stage') {
